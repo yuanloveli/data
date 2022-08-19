@@ -1,6 +1,6 @@
 # Git
 
-##	一.常用指令
+##	一、常用指令
 
 获取帮助：git help <verb>   #例如 git help config       常用： **git add -h 也行**
 
@@ -47,7 +47,7 @@
 1. 手动选择更改内容
 2. git add .    #添加至暂存区
 
-##二. 远程仓库
+##二、远程仓库
 
 * git remote add 仓库名(origin)  仓库地址          #添加远程仓库
 * git remote   -v   #查看仓库 并且显示URL
@@ -55,9 +55,12 @@
 * git remote rename origin  Hello  #更改仓库名称
 * git remote remove origin    #删除远程仓库
 * **git push origin master:master   #origin远程仓库名 master本地分支：远程分支名（不写默认同名）**
+
 * git clone 仓库地址 [本地目录]
 
-## 三. ssh公钥
+**注意：push 之前需要保证工作区有东西**
+
+## 三.、ssh公钥
 
 * ```console
   ssh-keygen -o          #生成公钥
@@ -66,4 +69,8 @@
 * ```console
   cat ~/.ssh/id_rsa.pub          #查看公钥
   ```
+
+##四、代码冲突问题解决方法：
+
+在仓库下进入命令行输入  ***git pull origin master --allow-unrelated-histories***
 

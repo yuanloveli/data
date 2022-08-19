@@ -256,6 +256,22 @@
 
   [服务名]-[环境].yaml>[服务名].yml>本地配置
 
+### nacos内置数据库
+
+步骤：
+
+1. 进入conf目录的applcation.properties文件
+
+2. 添加如下信息
+
+   spring.datasource.platform=mysql
+   db.num=1
+   db.url.0=jdbc:mysql://127.0.0.1:3306/nacos?characterEncoding=utf8&connectTimeout=1000&socketTimeout=3000&autoReconnect=true&**serverTimezone=UTC**
+   db.user=root
+   db.password=123456
+
+**注意：MySQL 8以上版本需要添加serverTimezone=UTC，指定时区**
+
 ## Feign
 
 * 基于feign远程调用  步骤如下
