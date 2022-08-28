@@ -74,3 +74,4 @@
 
 在仓库下进入命令行输入  ***git pull origin master --allow-unrelated-histories***
 
+https://kisugitakumi.com/2022/01/18/Git%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/
